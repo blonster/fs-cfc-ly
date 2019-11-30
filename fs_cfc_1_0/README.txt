@@ -7,16 +7,16 @@ the files should be used under the PyTorch environment.
 #--FILE DESCRIPTIONS--#
 
 \
-©§
-©Çmodule_impl		Low level implementations
-©§ ©§
-©§ ©Ç*.cpp		C++ interface definition files
-©§ ©»*.cu		CUDA implementation files
-©§
-©Çmodule_setup.py	Module setup script for PyTorch
-©ÇCFConv.py		Python interface of CFC layers
-©§
-©»*.py			PyTorch function definition files
+
+\module_impl		Low level implementations
+
+\module_impl\*.cpp	C++ interface definition files
+\module_impl\*.cu		CUDA implementation files
+
+\module_setup.py	Module setup script for PyTorch
+\CFConv.py		Python interface of CFC layers
+
+\*.py			PyTorch function definition files
 
 #--USAGE--#
 
@@ -40,7 +40,7 @@ as follows:
 		Conv2d requires) of inputf (the 2nd feature map)
 	och	Size of the 2nd dim (the order of dims is like what  
 		Conv2d requires) of output
-	kx	Size of the kernel will be kx ¡Á kx, i.e., ky equals to kx 
+	kx	Size of the kernel will be kx X kx, i.e., ky equals to kx 
 		by default
 	dtype	Data type of the feature maps. Can be torch.float or 
 		torch.double.
